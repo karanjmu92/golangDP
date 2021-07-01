@@ -1,7 +1,24 @@
-# golangDP
-Dynamic Prgramming Problems using Go language.
+# Dynamic Programming
 
-# Problems
+***
+
+Dynamic Programming is mainly an optimization over plain recursion. Wherever we see a recursive solution that has repeated calls for same inputs, we can optimize it using Dynamic Programming. The idea is to simply store the results of subproblems, so that we do not have to re-compute them when needed later. This simple optimization reduces time complexities from exponential to polynomial
+
+## Dynamic Programming Recipe
+
+**notice any overlapping subproblems**
+
+**decide what is the trivially smallest input**
+
+**think recursively to use memoization**
+
+**think iteratively to use tabulation**
+
+**draw a strategy first**
+
+
+
+###Dynamic Prgramming Problems using Go language.
 
 1. **Fibonaci Series**
 
@@ -45,3 +62,27 @@ Explanation : Write a function `howSum(targetSum, numbers)` that takes in a targ
                 The function should return an array containing the shortest combination of elements that add up to exactly the targetSum.
                 
                 If there is a tie for the shortest combination, you may return any one of the shortest.
+
+ 6. **CanConstruct**
+    
+  Explanation : Write a function `canConstruct(target, wordBank)` that accepts a target string and an array of strings.
+                The function should return a boolean indicating whether or not the `target` can be constructed by concatenating elements of the wordBank array.
+  
+                You may reuse elements of wordBank array as many times as needed.
+
+ 7. **CountConstruct**
+  
+  Explanation : Write a function `countConstruct(target, wordBank)` that accepts a target string and an array of strings.
+                The function should return the number of ways the `target` can be constructed by concatenating elements of the wordBank array.
+
+                You may reuse elements of wordBank array as many times as needed.
+
+ 8. **AllConstruct**
+
+  Explanation : Write a function `countConstruct(target, wordBank)` that accepts a target string and an array of strings.
+                The function should return a 2D array containing all of the ways that the `target` can be constructed by concatenating elements of the wordBank array.
+                Each element of the 2D array should represent one combinatin that constructs the `target`.
+
+                You may reuse elements of wordBank array as many times as needed.    
+  
+    
